@@ -42,7 +42,7 @@ int main()
 
 #### 方法1
 
-> 讲第一个数组种的元素不重复得复制到第二个数组中
+> 将第一个数组种的元素不重复地复制到第二个数组中
 
 ```cpp
 #include <iostream>
@@ -71,11 +71,7 @@ int main()
     }
 
     for (int i=0; i<m; i++) {
-        if (i == 0) {
-            cout << b[i];
-        } else {
-            cout << ' ' << b[i];
-        }
+        cout << b[i] << ' ';
     }
     cout << endl;
 }
@@ -92,12 +88,15 @@ using namespace std;
 
 int main(void)
 {
-    int vis[1010] = {0}, arr[1010], n = 0;
-    for (int x; cin >> x;)
-        if (vis[x]++ == 0)
+    int vis[1010] = {0}, arr[1010], n = 0, x;
+    while (cin >> x) {
+        if (vis[x]++ == 0) {
             arr[n++] = x;
-    for (int k = 0; k < n; k++)
+        }
+    }
+    for (int k = 0; k < n; k++) {
         cout << arr[k] << " ";
+    }
 
     return 0;
 }
@@ -156,7 +155,7 @@ int main()
     char digit[20];
     cin >> B;
 
-    for (int i=0; i<20; i++) {
+    for (int i = 0; i < 20; i++) {
         if (i < 10) {
             digit[i] = i + '0';
         } else {
@@ -164,7 +163,7 @@ int main()
         }
     }
 
-    for(int i=1; i<=200; i++) {
+    for(int i = 1; i <= 200; i++) {
         int n = i * i, len_b = 0;
         bool flag = true;
         while (n > 0) {
@@ -172,8 +171,8 @@ int main()
             n /= B;
             len_b++;
         }
-        for (int j=0; j<(len_b+1)/2; j++) {
-            if (b[j] != b[len_b-j-1]) {
+        for (int j = 0; j < ( len_b + 1 ) / 2; j++) {
+            if (b[j] != b[len_b - j - 1]) {
                 flag = false;
                 break;
             }
@@ -185,11 +184,11 @@ int main()
                 n /= B;
                 len_a++;
             }
-            for (int j=len_a-1; j>=0; j--) {
+            for (int j = len_a - 1; j >= 0; j--) {
                 cout << digit[a[j]];
             }
             cout << ' ';
-            for (int j=len_b-1; j>=0; j--) {
+            for (int j=len_b - 1; j >= 0; j--) {
                 cout << digit[b[j]];
             }
             cout << endl;
