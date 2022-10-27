@@ -40,7 +40,7 @@ int main()
 {
     int n,i,j,flag=0;
     cin >>n;
-    int a[n][n],b[n];//b[n]存放每一行1的个数
+    int a[n][n];
     for(i=0;i<n;i++){
         for(j=0;j<n;j++){
             cin >>a[i][j];
