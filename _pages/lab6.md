@@ -36,45 +36,31 @@ int main()
 ```cpp
 #include<iostream>
 using namespace std;
-int main() {
-	int m, n, mat[10][10] = { 0 }, i, j, x, y;
-	bool flag = 0, flag2 = 0;
-	cin >> m >> n;
-	for (i = 0; i < m; i++)
-	{
-		for (j = 0; j < n; j++)
-			cin >> mat[i][j];
-	}
-	for (i = 0; i < m; i++)
-	{
-		for (j = 0; j < n; j++)//对每一个元素进行判断
-		{
-			flag = 0;
-			for (x = 0; x < n; x++)
-			{
-				if (mat[i][j] < mat[i][x])
-				{
-					flag = 1; break;
-				}                    //行判断，如果不符合直接结束
-				if (flag) break;       
-				else {                 
-					for (y = 0; y < m; y++)      //进行列判断
-					{
-						if (mat[i][j] > mat[y][j])
-						{
-							flag = 1; break;
-						}
-					}
-				}
-			}
-			if (!flag)
-			{
-				cout << "mat[" << i << "][" << j << "]=" << mat[i][j] << endl; flag2 = 1;
-			}
-		}
-	}
-	if (!flag2) cout << "Not Found" << endl;
-	return 0;
+int main() 
+{
+    int n,i,j,flag=0;
+    cin >>n;
+    int a[n][n],b[n];//b[n]存放每一行1的个数
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
+            cin >>a[i][j];
+        }
+    }
+
+    for(j=n-1;j>=0;j--){
+        for(i=0;i<n;i++){
+            if(a[i][j]==1){
+                cout << i;
+                flag=1;
+                break; //找到1最多的行跳出内层循环
+            }
+        }
+        if(flag==1)
+            break;//跳出外层循环
+    }
+
+
+  return 0;
 }
 ```
 
