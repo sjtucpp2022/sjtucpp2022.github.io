@@ -1,5 +1,5 @@
 ---
-title: 第六周上机：数组
+title: 第6周上机：数组
 layout: post
 ---
 

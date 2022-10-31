@@ -1,5 +1,5 @@
 ---
-title: 第六周作业：数组
+title: 第6周作业：数组
 layout: post
 ---
 
