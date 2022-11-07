@@ -19,6 +19,6 @@ permalink: /
  - [第6周上机：数组](_pages/lab6.md)
  - [第7周作业：数组](_pages/hw7.md)
  - [第7周上机：数组](_pages/lab7.md)
- - 第8周作业
- - 第8周上机
+ - [第8周作业：函数](_pages/hw8.md)
+ - [第8周上机：函数](_pages/lab8.md)
 
