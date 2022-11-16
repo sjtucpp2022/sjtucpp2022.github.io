@@ -22,5 +22,3 @@ permalink: /
  - [第8周作业：函数](_pages/hw8.md)
  - [第8周上机：函数](_pages/lab8.md)
  - [第9周作业：函数](_pages/hw9.md)
- - [第9周上机：函数](_pages/lab9.md)
-
