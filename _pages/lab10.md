@@ -39,22 +39,23 @@ void deletechar(char* str1, const char* str2) { //str2的值不能改变
 	// write your code here
     char *p,*t;
     const char *q=str2;
-    p=str1;
-    for(int i=0;i<2;i++){
+    int flag=0;
+    p=str1; //p指向str1的首地址
     while(*q!='\0'){
-        while(*p!='\0'){
+        while(*p!='\0'){ //内层循环遍历p，对q的一个字符要和p中每一个字符比较，相同删除
+            flag=0;
             if(*p==*q){
+                flag=1;
                 t=p;
-                while(*t!='\0'){
+                while(*t!='\0'){ //p位置的字符=q位置的字符，将p所有的字符向前挪一位
                     *t=*(t+1);
                     t++;
                 }
             }
-            p++;
+            if(!flag) p++; //如果不存在相同的字符，指针向后挪一位，存在相同的字符指针位置不变
+            
         }
         p=str1;q++;
-    }
-    p=str1;q=str2;
     }
     
 }
