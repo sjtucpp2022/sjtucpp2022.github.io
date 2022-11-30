@@ -25,3 +25,4 @@ permalink: /
  - [第9周上机：指针](_pages/lab09.md)
  - [第10周作业：指针](_pages/hw10.md)
  - [第10周上机：指针](_pages/lab10.md)
+ - [第11周上机：结构体](_pages/lab11.md)
