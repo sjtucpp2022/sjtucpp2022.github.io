@@ -163,10 +163,11 @@ struct ComplexNum{
         if (b > 0) cout << '+';
         cout << b << 'i' << endl;
     }
-}x,y,m,n;
+};
 
 int main(){
 	int a,b,c,d;
+	ComplexNum x,y,m,n;
     cin >> a >> b >> c >> d;
 
     x.a = a; x.b = b; y.a = c; y.b = d;
