@@ -1,3 +1,8 @@
+---
+title: 第13周上机：类
+layout: post
+---
+
 ## 1.个人成绩单
 ```
 //class.cpp

@@ -1,3 +1,8 @@
+---
+title: 第11周上机：结构体
+layout: post
+---
+
 ## 1.时钟结构体
 ```
 #include <iostream>
