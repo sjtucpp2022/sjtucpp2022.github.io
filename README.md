@@ -30,3 +30,4 @@ permalink: /
  - [第13周作业：类](_pages/hw13.md)
  - [第13周上机：类](_pages/lab13.md)
  - [第14周作业：类](_pages/hw14.md)
+ - [第14周上机：类](_pages/lab14.md)
