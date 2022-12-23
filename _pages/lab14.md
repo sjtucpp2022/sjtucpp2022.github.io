@@ -4,6 +4,7 @@ layout: post
 ---
 
 ## 1.教授是老师
+
 - `main.cpp`
 ```
 #include <iostream>
@@ -34,6 +35,7 @@ int main()
 }
 ```
 - `birthday.h`
+
 ```
 #ifndef BIRTHDAY_H
 #define BIRTHDAY_H
@@ -58,6 +60,7 @@ public:
 ```
 
 - `birthday.cpp`
+
 ```
 #include "birthday.h"
 #include <cstring>
@@ -81,6 +84,7 @@ void birthday::set(int a,int b,int c){
 }
 ```
 - `teacher.h`
+
 ```
 #ifndef TEACHER_H
 #define TEACHER_H
@@ -103,6 +107,7 @@ public:
 #endif /* TEACHER_H */
 ```
 - `teacher.cpp`
+
 ```
 #include "teacher.h"
 #include <iostream>
@@ -125,6 +130,7 @@ void teacher::display(){
 }
 ```
 - `professor.h`
+
 ```
 #ifndef PROFESSOR_H
 #define PROFESSOR_H
@@ -147,6 +153,7 @@ public:
 ```
 - `professor.cpp`
 ```
+
 #include "professor.h"
 #include <iostream>
 using namespace std;
@@ -165,6 +172,7 @@ void professor::change(int a,int b,int c){
 
 ## 2.建筑类
 - `main.cpp`
+
 ```
 #include <iostream>
 #include "house.h"
@@ -185,6 +193,7 @@ int main()
 }
 ```
 - `building.h`
+
 ```
 #ifndef BUILDING_H
 #define BUILDING_H
@@ -203,6 +212,7 @@ public:
 #endif /* BUILDING_H */
 ```
 - `building.cpp`
+
 ```
 #include "building.h"
 #include <iostream>
@@ -222,6 +232,7 @@ void Building::print()
 }
 ```
 - `house.h`
+
 ```
 #ifndef HOUSE_H
 #define HOUSE_H
@@ -241,6 +252,7 @@ public:
 #endif /* HOUSE_H */
 ```
 - `house.cpp`
+
 ```
 #include "house.h"
 #include "building.h"
@@ -262,6 +274,7 @@ void House::print()
 }
 ```
 - `office.h`
+
 ```
 #ifndef OFFICE_H
 #define OFFICE_H
@@ -281,6 +294,7 @@ public:
 #endif
 ```
 - `office.cpp`
+
 ```
 #include "office.h"
 #include "building.h"
