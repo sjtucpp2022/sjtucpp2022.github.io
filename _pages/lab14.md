@@ -6,6 +6,7 @@ layout: post
 ## 1.教授是老师
 
 - `main.cpp`
+
 ```
 #include <iostream>
 #include <cstring>
@@ -34,6 +35,7 @@ int main()
     return 0;
 }
 ```
+
 - `birthday.h`
 
 ```
@@ -83,6 +85,7 @@ void birthday::set(int a,int b,int c){
     day=c;
 }
 ```
+
 - `teacher.h`
 
 ```
@@ -106,6 +109,7 @@ public:
 
 #endif /* TEACHER_H */
 ```
+
 - `teacher.cpp`
 
 ```
@@ -129,6 +133,7 @@ void teacher::display(){
     cout<<endl;
 }
 ```
+
 - `professor.h`
 
 ```
@@ -151,6 +156,7 @@ public:
 
 #endif /* PROFESSOR_H */
 ```
+
 - `professor.cpp`
 ```
 
@@ -192,6 +198,7 @@ int main()
     return 0;
 }
 ```
+
 - `building.h`
 
 ```
@@ -211,6 +218,7 @@ public:
 
 #endif /* BUILDING_H */
 ```
+
 - `building.cpp`
 
 ```
@@ -231,6 +239,7 @@ void Building::print()
 	cout<<"And total area is "<<sumarea<<endl;
 }
 ```
+
 - `house.h`
 
 ```
@@ -251,6 +260,7 @@ public:
 
 #endif /* HOUSE_H */
 ```
+
 - `house.cpp`
 
 ```
@@ -273,6 +283,7 @@ void House::print()
     cout << "bathroomnum=" << bathroomnum << endl;
 }
 ```
+
 - `office.h`
 
 ```
@@ -293,6 +304,7 @@ public:
 
 #endif
 ```
+
 - `office.cpp`
 
 ```
